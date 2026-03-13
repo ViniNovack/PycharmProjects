@@ -41,6 +41,7 @@
 #EXERCICIO 6.2
 L = []
 W = []
+Z = []
 while True:
     x = int(input('Digite os numeros da primeira lista (Digite 0 para SAIR): \n'))
     if x == 0:
@@ -53,6 +54,12 @@ while True:
         break
     else:
         W.append(y)
-L.extend(W)
-v = 0
-while v <= len(L):
+Z.extend(L)
+g = 0
+while g < len(W):
+    if W[g] not in L:
+        Z.append(W[g])
+        g +=1
+    else:
+        g +=1
+print(f'A listas é {Z}')
