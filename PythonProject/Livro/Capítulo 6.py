@@ -64,3 +64,48 @@
 #         g +=1
 # print(f'A listas é {Z}')
 
+#Listagem 6.23 - Pesquisa sequencial
+# L = []
+# while True:
+#     y = str(input('Quer continuar(Y/N)? \n'))
+#     if (y.lower()).strip() == 'n':
+#         break
+#     else:
+#         l = int(input('Digite um numero para montar sua lista: \n'))
+#         L.append(l)
+# while True:
+#     pp = 0
+#     p = 0
+#     v = 0
+#     vv = 0
+#     x = 0
+#     y = 0
+#     n = str(input('Quer achar um numero(Y/N)? \n'))
+#     if (n.lower()).strip() == 'n':
+#         break
+#     else:
+#         p = int(input('Qual número voce quer vereficar? \n'))
+#         v = int(input('Qual o segundo número que voce quer verificar? \n'))
+#         if p in L:
+#             while x < len(L):
+#                 if L[x] == p:
+#                     pp = L[x]
+#                     break
+#                 else:
+#                     x +=1
+#             print(f'O valor {p} esta na posição {pp}')
+#         if p not in L:
+#             print(f'O valor {p} não esta na lista')
+#         if v in L:
+#             while y < len(L):
+#                 if L[y] == v:
+#                     vv = L[y]
+#                     break
+#                 else:
+#                     y +=1
+#             print(f'O valor {v} esta na lista na posição {vv}')
+#         if v not in L:
+#             print(f'O valor {v} não esta na lista')
+# print('FIM')
+
+#
