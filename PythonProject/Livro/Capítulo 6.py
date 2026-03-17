@@ -108,4 +108,63 @@
 #             print(f'O valor {v} não esta na lista')
 # print('FIM')
 
-#
+#Listagem 6.24
+# L = [8, 9, 15]
+# for e in L:
+#     print(e)
+
+#Listagem 6.27
+# for v in range(5, 8):
+#     print(v)
+
+# for t in range(3, 33, 3):
+#     print(t, end=" - ")
+# print()
+
+#Listagem 6.31
+# L = [5, 9, 13]
+# x = 0
+# for e in L:
+#     print(f'{x + 1} - {e}')
+#     x +=1
+
+# z = 0
+# L = [5, 9, 13]
+# for x, e in enumerate(L):
+#     print(f'{x + 1} - {e}')
+
+#LISTAGEM 6.33
+# L = [1, 7, 2, 4]
+# maximo = L[0]
+# for e in L:
+#     if e > maximo:
+#         maximo = e
+# print(maximo)
+# for c in L:
+#     if c < m:
+#         m = c
+# print(f'o menor valor é {m}')
+
+#EXERCICIO 6.7
+# L = []
+# while True:
+#     v = int(input('Adicione um valor a lista (Ou digite 000 para SAIR): \n'))
+#     if v == 000:
+#         break
+#     else:
+#         L.append(v)
+# while True:
+#     d = str(input('Deseja descobrir o maior e menor valor da sua lista (Y/N)? \n'))
+#     if (d.strip()).upper() == 'N':
+#         break
+#     else:
+#         M = L[0]
+#         for c in L:
+#             if c > M:
+#                 M = c
+#         m = L[0]
+#         for g in L:
+#             if g < L[0]:
+#                 m = g
+#     print(f'O maior número é {M} e o menor é {m}')
+# print('FIM')

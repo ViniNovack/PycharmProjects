@@ -108,7 +108,7 @@
 # y = 0
 # while True:
 #     x = 1
-#     sinal = str(input('Digite um sinal ou esvreva sair: \n'))
+#     sinal = str(input('Digite um sinal ou escreva sair: \n'))
 #     if sinal == '+' or sinal == '-' or sinal == '*' or sinal == '/':
 #         numero = int(input('Digite um numero: \n'))
 #         if sinal == '+':
