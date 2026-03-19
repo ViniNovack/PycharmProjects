@@ -61,3 +61,31 @@ from idlelib.debugobj import ClassTreeItem
 #     print(f'A região {x,y} está Fora do quadrado')
 
 #EXERCICO 6 (DESAFIO)
+# a = int(input('Digite o primeiro lado: \n'))
+# b = int(input('Digite o segundo lado: \n'))
+# c = int(input('Digite o terceiro lado: \n'))
+# if (a + b) < c:
+#     print('Esse triangulo NÃO EXISTE')
+# elif a == b == c:
+#     print('Esse triangulo é EQUILÁTERO')
+# elif a != b != c:
+#     print('Esse triangulo é ESCALENO')
+# elif (a == b != c) or (a == c != b) or (b == c != a):
+#     print('Esse triangulo é Isósceles')
+#
+# M = a
+# if b > M:
+#     M = b
+# if c > M:
+#     M = c
+# if M == a:
+#     if M**2 == b**2 + c**2:
+#         print('Esse triangulo é RETANGULO')
+# if M == b:
+#     if M**2 == a**2 + c**2:
+#         print('Esse triangulo é RETANGULO')
+# if M == c:
+#     if M**2 == b**2 + a**2:
+#         print('Esse triangulo é RETANGULO')
+# else:
+#     print('Esse triangulo NÃO É RETANGULO')
