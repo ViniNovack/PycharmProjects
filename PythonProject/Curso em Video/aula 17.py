@@ -60,4 +60,5 @@ while True:
             L.append(n)
         else:
             print('Esse valor já existe na lista!')
-print(f'A sua lista é {L.sort(reverse = True)}')
+L.sort()
+print(f'A sua lista é {L}')
