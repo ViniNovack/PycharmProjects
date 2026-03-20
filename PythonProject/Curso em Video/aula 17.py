@@ -36,6 +36,14 @@
 #     else:
 #         x +=1
 # M = str(M)
+# print('As posições', end=' ')
+# for r, v in enumerate(L):
+#     if v == M:
+#         print(f'{r + 1}',end='-')
+# print(f'O MAIOR valor é {M}')
 # m = str(m)
-# print(f'O MAIOR valor é {M} que esta na posição {L.index(M) + 1}')
-# print(f'O MENOR valor é {m} que esta na posição {L.index(m) + 1}')
+# print('As posições', end=' ')
+# for k, ç in enumerate(L):
+#     if ç == m:
+#         print(f'{k + 1}', end='-')
+# print(f'O MENOR valor é {m}')
