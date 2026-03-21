@@ -65,24 +65,20 @@
 
 #EXERCICO 80
 L = []
-y = 1
+y = 0
 while True:
-    y = 1
+    y = 0
     n = int(input('Digite um numero: \n'))
     if n == 0:
         break
-    elif len(L) == 0:
+    elif len(L) == 0 or n > L[-1]:
         L.append(n)
         print(L)
         continue
     else:
-        while y <= (len(L) - 1):
-            if n > L[len(L) - 1]:
-                L.append(n)
-                print(L)
-                break
-            elif n > L[-y]:
-                L.insert(-y, n)
+        while y <= len(L):
+            if n <= L[y]:
+                L.insert(y, n)
                 print(L)
                 break
             else:
