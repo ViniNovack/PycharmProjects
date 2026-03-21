@@ -64,26 +64,28 @@
 # print(f'A sua lista é {L}')
 
 #EXERCICO 80
-L = []
-y = 0
-while True:
-    y = 0
-    n = int(input('Digite um numero: \n'))
-    if n == 0:
-        break
-    elif len(L) == 0 or n > L[-1]:
-        L.append(n)
-        print(L)
-        continue
-    else:
-        while y <= len(L):
-            if n <= L[y]:
-                L.insert(y, n)
-                print(L)
-                break
-            else:
-                y +=1
-        if n not in L:
-            L.insert(0,n)
-            print(L)
-print(f'FIM, a lista final é {L}')
+# L = []
+# y = 0
+# while True:
+#     y = 0
+#     n = int(input('Digite um numero: \n'))
+#     if n == 0:
+#         break
+#     elif len(L) == 0 or n > L[-1]:
+#         L.append(n)
+#         print(L)
+#         continue
+#     else:
+#         while y <= len(L):
+#             if n <= L[y]:
+#                 L.insert(y, n)
+#                 print(L)
+#                 break
+#             else:
+#                 y +=1
+#         if n not in L:
+#             L.insert(0,n)
+#             print(L)
+# print(f'FIM, a lista final é {L}')
+
+#EXERCICIO 81
