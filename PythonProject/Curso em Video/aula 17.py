@@ -132,6 +132,5 @@
 #EXERCICIO 83
 L = []
 e = str(input('Digite a expreção: \n'))
-L.append(e)
-l = list(L)
-print(l)
+while True:
+    if e.count('(') == e.count()
