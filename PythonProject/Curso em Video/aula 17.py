@@ -130,4 +130,4 @@
 # print(f'Os números ímpares digitados foram: {I}')
 
 #EXERCICIO 83
-print('Olá, mundo')
+
