@@ -139,3 +139,15 @@
 #     else:
 #         print('Essa expreção esta INVALIDA \n')
 #         break
+                         #OR
+# L = []
+# e = str(input('Digite a sua expreção: \n'))
+# for s in e:
+#     if s == '(':
+#         L.append('(')
+#     elif s == ')':
+#         L.pop()
+# if len(L) == 0:
+#     print('Essa expreção é VALIDA \n')
+# else:
+#     print('Essa expreção é INVALIDA \n')
