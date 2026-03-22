@@ -1,2 +1,2 @@
 #EXEMPLO 1
-print('Olá, mundo!')
+print('Hello, word!')
