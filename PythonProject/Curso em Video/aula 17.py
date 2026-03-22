@@ -107,24 +107,27 @@
 #     print('O valor 5 NÃO faz parte da lista! \n')
 
 #EXERCICIO 82
-L = []
-I = []
-P = []
-while True:
-    n = str(input('Digite um número ou escreva "sair" para finalizar o programa: \n'))
-    if (n.strip()).lower() == 'sair':
-        break
-    else:
-        L.append(int(n))
-        L.sort()
-        print(L)
-        if int(n) % 2 == 0:
-            P.append(int(n))
-        else:
-            I.append(int(n))
-L.sort()
-P.sort()
-I.sort()
-print(f'Os números ddigitados foram: {L}')
-print(f'Os números pares digitados foram: {P}')
-print(f'Os números ímpares digitados foram: {I}')
+# L = []
+# I = []
+# P = []
+# while True:
+#     n = str(input('Digite um número ou escreva "sair" para finalizar o programa: \n'))
+#     if (n.strip()).lower() == 'sair':
+#         break
+#     else:
+#         L.append(int(n))
+#         L.sort()
+#         print(L)
+#         if int(n) % 2 == 0:
+#             P.append(int(n))
+#         else:
+#             I.append(int(n))
+# L.sort()
+# P.sort()
+# I.sort()
+# print(f'Os números digitados foram: {L}')
+# print(f'Os números pares digitados foram: {P}')
+# print(f'Os números ímpares digitados foram: {I}')
+
+#EXERCICIO 83
+
