@@ -40,37 +40,36 @@ L = []
 U = []
 while True:
     n = str(input('Digite seu nome(Ou SAIR para finalizar): \n'))
-    x +=1
     if n.lower() == 'sair':
         break
     else:
+        x +=1
         i = float(input('Digite seu peso: \n'))
         U.append(n)
         U.append(i)
         L.append(U[:])
         U.clear()
-
-menor = []
+menoryy = []
 pen = L[0][1]
 for p in L:
     if p[1] >= pen:
-        if p[1] == pen:
-            menor.append(p[0])
+        if pen == p[1]:
+            menoryy.append(p[0])
         else:
+            menor = p [0]
             pen = p[1]
-            menor.append(p[0])
 
-maior = []
+maioryy = []
 peM = L[0][1]
-for p in L:
-    if p[1] <= peM:
-        if p[1] == peM:
-            maior.append(p[0])
+for o in L:
+    if o[1] <= peM:
+        if peM == o[1]:
+            maioryy.append(o[0])
         else:
-            peM = p[1]
-            maior.append(p[0])
+            peM = o[1]
+            maior = o[0]
 
 print(f'Foram cadastradas {x} pessoas! \n')
-print(f'O MAIOR peso foi de {pen} kg. Peso de {maior} \n')
-print(f'O MENOR peso foi de {peM} kg. Peso de {menor} \n')
+print(f'O MAIOR peso foi de {peM} kg. Peso de {maior, maioryy} \n')
+print(f'O MENOR peso foi de {pen} kg. Peso de {menor, menoryy} \n')
 print('FIM')
