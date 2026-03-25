@@ -35,10 +35,12 @@
 # print(f'Temos {totmal} maior e {totmen} menor de idade! \n')
 
 #EXERCICIO 84
+x = 0
 L = []
 U = []
 while True:
     n = str(input('Digite seu nome(Ou SAIR para finalizar): \n'))
+    x +=1
     if n.lower() == 'sair':
         break
     else:
@@ -47,5 +49,28 @@ while True:
         U.append(i)
         L.append(U[:])
         U.clear()
-print(L)
+
+menor = []
+pen = L[0][1]
+for p in L:
+    if p[1] >= pen:
+        if p[1] == pen:
+            menor.append(p[0])
+        else:
+            pen = p[1]
+            menor.append(p[0])
+
+maior = []
+peM = L[0][1]
+for p in L:
+    if p[1] <= peM:
+        if p[1] == peM:
+            maior.append(p[0])
+        else:
+            peM = p[1]
+            maior.append(p[0])
+
+print(f'Foram cadastradas {x} pessoas! \n')
+print(f'O MAIOR peso foi de {pen} kg. Peso de {maior} \n')
+print(f'O MENOR peso foi de {peM} kg. Peso de {menor} \n')
 print('FIM')
