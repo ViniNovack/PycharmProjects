@@ -49,27 +49,32 @@ while True:
         U.append(i)
         L.append(U[:])
         U.clear()
-menoryy = []
-pen = L[0][1]
-for p in L:
-    if p[1] >= pen:
-        if pen == p[1]:
-            menoryy.append(p[0])
-        else:
-            menor = p [0]
-            pen = p[1]
 
-maioryy = []
-peM = L[0][1]
-for o in L:
-    if o[1] <= peM:
-        if peM == o[1]:
-            maioryy.append(o[0])
-        else:
-            peM = o[1]
-            maior = o[0]
+lista_pessoa_menor = []
+peso_menor = L[0][1]
+for pm in L:
+    if pm[1] <= peso_menor:
+        if pm[1] == peso_menor:
+            lista_pessoa_menor.append(pm[0])
+        peso_menor = pm[1]
+        pessoa_menor = pm[0]
+    else:
+        continue
+lista_pessoa_menor.append(pessoa_menor)
+
+lista_pessoa_maior = []
+peso_maior = L[0][1]
+for pM in L:
+    if pM[1] >= peso_maior:
+        if pM[1] == peso_maior:
+            lista_pessoa_maior.append(pM[0])
+        peso_maior = pM[1]
+        pessoa_maior = pM[0]    
+    else:
+        continue
+lista_pessoa_maior.append(pessoa_maior)
 
 print(f'Foram cadastradas {x} pessoas! \n')
-print(f'O MAIOR peso foi de {peM} kg. Peso de {maior, maioryy} \n')
-print(f'O MENOR peso foi de {pen} kg. Peso de {menor, menoryy} \n')
+print(f'O MAIOR peso foi de {peso_maior}kg. Da pessoa {lista_pessoa_maior}! \n')
+print(f'O MENOR peso foi de {peso_menor}kg. Da pessoa {lista_pessoa_menor}! \n')
 print('FIM')
