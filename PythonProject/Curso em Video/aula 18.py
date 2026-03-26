@@ -102,3 +102,10 @@
 #         print(f'[{M[l][c]}]', end='')
 #     print()
 # print('=-'*30)
+
+#EXERCICIO 87
+M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        x = int(input(f'Digite '))
+
