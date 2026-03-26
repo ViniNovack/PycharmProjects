@@ -36,3 +36,13 @@
 #     print(f'O resultado da "-" é {y} \n')
 
 #EXERCICIO 3
+x = 0
+y = 0
+while True:
+    n = int(input('Digite números(digite "algum número negativo para SAIR"): \n'))
+    if n < 0:
+        break
+    else:
+        x +=1
+        y = y + n
+print(f'A MÉDIA dos valores digitados é {y/x} \n')
