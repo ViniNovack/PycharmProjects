@@ -64,3 +64,26 @@
 #     x +=1
 # print(f'O número de números PARES lidos foi de {p} e eles são: {P} \n')
 # print(f'O número de números INPARES lidos foi de {i} e eles são: {I} \n')
+
+#EXERCICIO 5
+while True:
+    s = str(input(' 1: soma\n 2: subtração\n 3: multiplicação\n 4: divisão\n 0: sair\n Escolha uma opção: \n'))
+    n1 = int(input('Digite um número: \n'))
+    n2 = int(input('Digite o outro número: \n'))
+   
+    if s == 1:
+        print(f'O resultado da some é {n1 + n2} \n')
+    elif s == 2:
+        print(f'O resultado da subtração é {n1 - n2} \n')
+    elif s == 3:
+        print(f'O resultado da multiplicação é {n1 * n2} \n')
+    elif s == 4:
+        if n2 == 0:
+            print('Não é possivel dividir por 0 \n')
+        else:
+            print(f'O resultado da divisão é {n1 / n2} \n')
+    elif s == 0:
+        print('O programa finalizou \n')
+        break
+    else:
+        print('Opção invalida, tente novamente \n')
