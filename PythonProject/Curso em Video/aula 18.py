@@ -104,8 +104,39 @@
 # print('=-'*30)
 
 #EXERCICIO 87
-M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-for l in range(0, 3):
-    for c in range(0, 3):
-        x = int(input(f'Digite '))
+# M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# for l in range(0, 3):
+#     for c in range(0, 3):
+#         x = int(input(f'Digite um valor para a cordenada [{l} X {c}]: \n'))
+#         M[l][c] = x
+# print('=-'*30)
+# for l in range(0, 3):
+#     for c in range(0, 3):
+#         print(f'[{M[l][c]}]', end='')
+#     print()
+# print('=-'*30)
+#
+# s = 0
+# for l in range(0, 3):
+#     for c in range(0, 3):
+#         if M[l][c] % 2 == 0:
+#             s = s + M[l][c]
+# print(f'A soma dos valores pares da matriz é {s} \n')
+#
+# S = M[0][2]
+# z = 1
+# while z < 3:
+#     S = S + M[z][2]
+#     z +=1
+# print(f'A soma dos valores da terceira coluna é {S} \n')
+#
+# ma = M[1][0]
+# for k in M[1]:
+#     if k > ma:
+#         ma = k
+#     else:
+#         continue
+# print(f'O maior valor da segunda coluna é {ma} \n')
+
+#EXERCICIO 88
 
