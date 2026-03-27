@@ -160,23 +160,49 @@
 # print('FIM')
 
 #EXERCICIO 89
-L = []
-U = []
-y = 1
-x = int(input('Digite o número de notas que voce quer registrar para cada aluno: \n'))
-while True:
-    a = str(input('Digite o nome do aluno(ou "SAIR" para finalizar) \n'))
-    if (a.lower()).strip() == 'sair':
-        break
-    else:
-        U.append(a)
-        while y <= x:
-            n = float(input(f'Digite a nota do aluno {a}: \n'))
-            U.append(n)
-            y += 1
-        L.append(U[:])
-        U.clear()
-        y = 1
-print('=-'*30)
-for p in L:
-    
+# L = []
+# U = []
+# y = 1
+# x = int(input('Digite o número de notas que voce quer registrar para cada aluno: \n'))
+# while True:
+#     a = str(input('Digite o nome do aluno(ou "SAIR" para finalizar) \n'))
+#     if (a.lower()).strip() == 'sair':
+#         break
+#     else:
+#         U.append((a.lower()).strip())
+#         while y <= x:
+#             n = float(input(f'Digite a nota do aluno {a}: \n'))
+#             U.append(n)
+#             y += 1
+#         L.append(U[:])
+#         U.clear()
+#         y = 1
+#
+# print('=-'*30)
+# print('ALUNOS...............MÉDIAS')
+# s = 0
+# for p in L:
+#     s = 0
+#     for k in p:
+#         if k == p[0]:
+#             continue
+#         else:
+#             s = s + k
+#     print(f'{p[0]}.....................{s/x}')
+#
+# print('=-'*30)
+#
+# while True:
+#     aluno = str(input('Digite o nome de um alno para voce ver as nota dele (ou digite "SAIR" para finalizar): \n'))
+#     if (aluno.lower()).strip() == 'sair':
+#         break
+#     else:
+#         for p in L:
+#             for c in p:
+#                 if c == aluno:
+#                     print(f'As notas do aluno: "{c}" são {p[1:]}')
+#                 else:
+#                     continue
+#
+# print('=-'*30)
+# print('FIM')
