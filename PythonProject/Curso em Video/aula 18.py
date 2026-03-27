@@ -139,4 +139,24 @@
 # print(f'O maior valor da segunda coluna é {ma} \n')
 
 #EXERCICIO 88
+import random
+# L = []
+# j = int(input('Digite o número de jogos que voce quer gerar: \n'))
+# x = 1
+# y = 1
+# while x <= j:
+#     y = 1
+#     while y <= 6:
+#         n = random.randrange(1, 61)
+#         if n not in L:
+#             L.append(n)
+#             y +=1
+#         else:
+#             continue
+#     print(L[:])
+#     L.clear()
+#     x +=1
+# print('=-'*30)
+# print('FIM')
 
+#EXERCICIO 89
