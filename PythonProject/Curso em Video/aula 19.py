@@ -4,3 +4,5 @@
 # print(dados['nome'])
 # print(dados['idade'])
 # print(dados['sexo'])
+
+print('Olá, mundo')
