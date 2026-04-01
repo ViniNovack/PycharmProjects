@@ -143,30 +143,38 @@
 # print('=-'*30)
 
 #EXERCICIO 93
-G = []
-D = {}
-while True:
-    q = int(input('Digite quantos atlétas voce quer analizar: \n'))
-    for c in range(1, (q + 1)):
-        print('=-'*30)
-        D['nome'] = str(input(f'Digite o nome do atleta {c}º: \n'))
-        partidas = int(input(f'Digite quantas partidas o atleta {D['nome']} jogou: \n'))
-        for p in range(1, (partidas + 1)):
-            D[f'PARTIDA {p}'] = int(input(f'Quantos gols o atleta {D['nome']} fez na partida {p}: \n'))
-            G.append(D[f'PARTIDA {p}'])
-        print('=-'*30)
-        print(f'O atleta {D['nome']} jogou {partidas} partidas')
-        for k, v in D.items():
-            print(f' => Na {k} ele fez {v} gols\n')
-        print(f'Foi um total de {sum(G)} gols em {partidas} partidas')
-        D.clear()
-        G.clear()
-        print('=-'*30)
-    y = str(input('Quer analizar mas jogadores? (Y/N)\n'))
-    if (y.lower()).strip() == 'n':
-        break
-    else:
-        continue
-print('=-'*30)
-print('FIM')
-print('=-'*30)
+# G = []
+# D = {}
+# while True:
+#     print('=-'*30)
+#     q = int(input('Digite quantos atlétas voce quer analizar: \n'))
+#     for c in range(1, (q + 1)):
+#         print('=-'*30)
+#         D['nome'] = str(input(f'Digite o nome do atleta {c}º: \n'))
+#         partidas = int(input(f'Digite quantas partidas o atleta {D['nome']} jogou: \n'))
+       
+#         for p in range(1, (partidas + 1)):
+#             D[f'PARTIDA {p}'] = int(input(f'Quantos gols o atleta {D['nome']} fez na partida {p}: \n'))
+#             G.append(D[f'PARTIDA {p}'])
+#         print('=-'*30)
+#         print(f'O atleta {D['nome']} jogou {partidas} partidas')
+        
+#         for k, v in D.items():
+#             if k == 'nome':
+#                 continue
+#             else:
+#                 print(f' => Na {k} ele fez {v} gols\n')
+#         print(f'Foi um total de {sum(G)} gols em {partidas} partidas')
+#         D.clear()
+#         G.clear()
+#         print('=-'*30)
+#     y = str(input('Quer analizar mas jogadores? (Y/N)\n'))
+#     if (y.lower()).strip() == 'n':
+#         break
+#     else:
+#         continue
+# print('=-'*30)
+# print('FIM')
+# print('=-'*30)
+
+#EXERCICIO 94
