@@ -41,4 +41,55 @@
 #     print()
 
 #___________________________________________________________________________________________________________________________________________________________
-#EXERCICIO 1
+#EXERCICIO 90
+# D = {}
+# while True:
+#     D.clear()
+#     n = str(input('Digite o nome do aluno (ou "SAIR" para finalizar o programa): \n'))
+#     if (n.lower()).strip() == 'sair':
+#         break
+#     else:
+#         D['nome'] = n
+#         m = float(input('Digite a média do aluno: \n'))
+#         D['media'] = m
+#         if m < 7:
+#             D['situação'] = 'VOCE ESTA DE RECUPERAÇÃO'
+#         elif m == 7:
+#             D['situação'] = 'FOI QUASE EM, MAS VOCE ESTA APROVADO'
+#         else:
+#             D['situação'] = 'PARABENS, voce foi APROVADO'
+#         print('=-'*30)
+#         print(f'O aluno {D['nome']}\nMédia é igual a {D['media']}\nSituação do aluno é: {D['situação']}')
+# print('=-'*30)
+# print('FIM')
+
+#EXERCICIO 91
+import random
+D = {}
+CR = 1
+CJ = 1
+while True:
+    print('=-'*30)
+    print(F'RODADA {CR}')
+    print('=-'*30)
+    while CJ <= 4:
+        D[f'jogador {CJ}'] = str(input(f'Digite "Y" para girar o dado: \n'))
+        if (D[f'jogador {CJ}'].lower()).strip() == 'y':
+            D[f'jogador {CJ}'] = random.randrange(1, 7)
+            print(f'O jogador {CJ} tirou {D[f'jogador {CJ}']}')
+            CJ +=1
+        else:
+            print('=-'*30)
+            print('TENTE DE NOVO')
+            print('=-'*30)
+            continue
+    print('=-'*30)
+    r = str(input('Quer jogar mais uma rodade? (Y/N) \n'))
+    if (r.lower()).strip() == 'y':
+        CR +=1
+        CJ = 1
+        D.clear()
+        continue
+    else:
+        break
+print('FIM')
