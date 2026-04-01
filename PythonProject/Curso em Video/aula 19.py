@@ -64,46 +64,50 @@
 # print('FIM')
 
 #EXERCICIO 91
-import random
-U = []
-L = []
-D = {}
-CR = 1
-CJ = 1
-p = 1
-while True:
-    print('=-'*30)
-    print(F'RODADA {CR}')
-    print('=-'*30)
-    while CJ <= 4:
-        D[f'jogador {CJ}'] = str(input(f'Digite "Y" para girar o dado: \n'))
-        if (D[f'jogador {CJ}'].lower()).strip() == 'y':
-            D[f'jogador {CJ}'] = random.randrange(1, 7)
-            print(f'O jogador {CJ} tirou {D[f'jogador {CJ}']}')
-            CJ +=1
-        else:
-            print('=-'*30)
-            print('TENTE DE NOVO')
-            print('=-'*30)
-            continue
-    for k, v in D.items():
-        U.append(v)
-        U.append(k)
-        L.append(U[:])
-        U.clear()
-    L.sort()
-    for i in L:
-        print(f'{p}º Lugar: {i[1]} fez {i[0]} pontos')
-        p +=1 
-    print('=-'*30)
-    r = str(input('Quer jogar mais uma rodade? (Y/N) \n'))
-    print('=-'*30)
-    if (r.lower()).strip() == 'y':
-        CR +=1
-        CJ = 1
-        p = 1
-        D.clear()
-        continue
-    else:
-        break
-print('FIM')
+# import random
+# U = []
+# L = []
+# D = {}
+# CR = 1
+# CJ = 1
+# p = 1
+# while True:
+#     print('=-'*30)
+#     print(F'RODADA {CR}')
+#     print('=-'*30)
+#     while CJ <= 4:
+#         D[f'jogador {CJ}'] = str(input(f'Digite "Y" para girar o dado: \n'))
+#         if (D[f'jogador {CJ}'].lower()).strip() == 'y':
+#             D[f'jogador {CJ}'] = random.randrange(1, 7)
+#             print(f'O jogador {CJ} tirou {D[f'jogador {CJ}']}')
+#             CJ +=1
+#         else:
+#             print('=-'*30)
+#             print('TENTE DE NOVO')
+#             print('=-'*30)
+#             continue
+#     for k, v in D.items():
+#         U.append(v)
+#         U.append(k)
+#         L.append(U[:])
+#         U.clear()
+#     L.sort(reverse=True)
+#     print('=-'*30)
+#     for i in L:
+#         print(f'{p}º Lugar: {i[1]} fez {i[0]} pontos')
+#         p +=1 
+#     print('=-'*30)
+#     r = str(input('Quer jogar mais uma rodade? (Y/N) \n'))
+#     print('=-'*30)
+#     if (r.lower()).strip() == 'y':
+#         CR +=1
+#         CJ = 1
+#         p = 1
+#         D.clear()
+#         L.clear()
+#         continue
+#     else:
+#         break
+# print('FIM')
+
+#EXERCICIO 92
