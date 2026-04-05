@@ -38,12 +38,46 @@
 #EXEMPLO 5
 
 #TERMINAR DE VER ESSA PARTE DA AULA
+# def dobra(lst):
+#     for n in lst:
+#         x = lst.index(n)
+#         lst[x] = n * 2
 
-def dobra(lst):
-    for n in lst:
-        x = lst.index(n)
-        lst[x] = n * 2
+# L = [1, 2, 3, 4, 5]
+# dobra(L)
+# print(L)
+                      # OU
+# def soma(*valores):
+#     s = 0
+#     for num in valores:
+#         s += num
+#     print(f'Somando os valores {valores} termos {s}')
 
-L = [1, 2, 3, 4, 5]
-dobra(L)
-print(L)
+#EXEMPLO 6
+# def dobra(lst):
+#     pos = 0
+#     while pos < len(lst):
+#         lst[pos] *= 2
+#         pos +=1
+
+
+# valores = [6, 3, 9, 1, 0, 2]
+# dobra(valores)
+# print(valores)
+
+#EXERCICIO 96
+# def area(l, c):
+#     a = l * c
+#     print(f'A área de um terreno {l} X {c} é de {a}mª')
+
+# while True:
+#     A = str(input('Quer continuar (Y/N)? \n'))
+#     if (A.lower()).strip() == 'n':
+#         break
+#     else:
+#         l = int(input('Digite a largura do terreno: \n'))
+#         c = int(input('Digite o comprimento do terreno: \n'))
+#         area(l, c)
+# print('FIM')
+
+#EXERCICIO 97
