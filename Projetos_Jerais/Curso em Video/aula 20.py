@@ -37,7 +37,6 @@
 
 #EXEMPLO 5
 
-#TERMINAR DE VER ESSA PARTE DA AULA
 # def dobra(lst):
 #     for n in lst:
 #         x = lst.index(n)
@@ -135,3 +134,23 @@
 # print('=-'*30)
 
 #EXERCICIO 99
+# def maior(*num):
+#     n = len(num)
+#     M = num[0]
+#     for c in num:
+#         if c > M:
+#             M = c
+#         else:
+#             continue
+#     print(f'Os valores digitados foram {num}, possuem {n} elementos e o maior número é {M} \n')
+
+# L = []
+# while True:
+#     x = str(input('Digite valores (ou "SAIR" para finalizar): \n'))
+#     if (x.lower()).strip() == 'sair':
+#         break
+#     else:
+#         L.append(int(x))
+# maior(*L)
+
+#EXERCICIO 100
