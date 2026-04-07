@@ -81,3 +81,18 @@
 # print('FIM')
 
 #EXERCICIO 97
+# def centralizar(x):
+#     c = len(x)
+#     print('='*(c + 4))
+#     print(x.center(c + 4))
+#     print('='*(c + 4))
+
+# while True:
+#     x = str(input('Digite uma frase (ou "SAIR" para finalizar): \n'))
+#     if (x.lower()).strip() == 'sair':
+#         break
+#     else:
+#         centralizar(x)
+# print('FIM')
+
+#EXERCICIO 98
