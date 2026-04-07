@@ -94,7 +94,7 @@
 #         centralizar(x)
 # print('FIM')
 
-#EXERCICIO 98
+# EXERCICIO 98
 # import time
 # print('=-'*30)
 # print('Contagem de 1 até 10 de 1 em 1: ')
