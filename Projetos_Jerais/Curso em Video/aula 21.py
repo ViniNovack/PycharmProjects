@@ -44,9 +44,9 @@
 # else:
 #     print('É IMPAR!')
 
-# EXERCICIO 101                                              !!!!!!!!!!!!!!!!!!!!!!!!!!!!(VER RESOLUÇÃO DO EXERCICIO)!!!!!!!!!!!!!!!!!!!!!!
-# import datetime
+# EXERCICIO 101
 # def voto(ano):
+#     import datetime
 #     atual = datetime.date.today().year
 #     idade = atual - ano
 #     if idade < 16:
@@ -68,3 +68,34 @@
 # print('FIM')
 
 # EXERCICIO 102
+# def fatorial(n, show=False):
+#     k = 1
+#     for c in range(n, 0, -1):
+#         if show == True:
+#             k *=c
+#             if c > 1:
+#                 print(f'{c}', end=' ''X ')
+#             elif c == 1:
+#                 print(f'{c}', end=' ''= ')
+#         else:
+#             k *=c
+#     print(k, end='')
+
+# fatorial(10, True)
+
+#EXERCICIO 103
+def ficha(nome='<desconhacido>', gols=0):
+    print(f'O jogador {nome} fez {gols} gol(s) no campeonato.')
+
+n = str(input('Nome do Jogador: \n'))
+g = str(input('Número de Gols: \n'))
+
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+
+if n.strip() == '':
+    ficha(gols=g)
+else:
+    ficha(n, g)
