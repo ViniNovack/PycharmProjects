@@ -23,16 +23,17 @@ while True:
     try:
         i = int(i)
         while True:
-            f = str(input('Digite um Real: '))
             try:
-                f = float(f)
-                break
+                f = str(input('Digite um Real: '))
+                try:
+                    f = float(f)
+                    break
+                except:
+                    print('ERRO: por favor, digite um número real válido.')
+                    continue
             except KeyboardInterrupt:
                 print('O usuario preferiu não digitar o numero Real')
                 break
-            except:
-                print('ERRO: por favor, digite um número real válido.')
-                continue
         break
     except:
         print('ERRO: por favor, digite um número inteiro válido.')
