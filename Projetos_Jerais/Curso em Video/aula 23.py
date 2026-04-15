@@ -17,25 +17,36 @@
 #     print('Volte sempre! Muito obrigado!')
 
 # EXERCICIO 113
-f = 0
-while True:
-    i = str(input('Digite um Inteiro: '))
-    try:
-        i = int(i)
-        while True:
-            try:
-                f = str(input('Digite um Real: '))
-                try:
-                    f = float(f)
-                    break
-                except:
-                    print('ERRO: por favor, digite um número real válido.')
-                    continue
-            except KeyboardInterrupt:
-                print('O usuario preferiu não digitar o numero Real')
-                break
-        break
-    except:
-        print('ERRO: por favor, digite um número inteiro válido.')
-        continue
-print(f'O valor inteiro digitado foi {i} e o real foi {f}')
+# f = 0
+# while True:
+#     i = str(input('Digite um Inteiro: '))
+#     try:
+#         i = int(i)
+#         while True:
+#             try:
+#                 f = str(input('Digite um Real: '))
+#                 try:
+#                     f = float(f)
+#                     break
+#                 except:
+#                     print('ERRO: por favor, digite um número real válido.')
+#                     continue
+#             except KeyboardInterrupt:
+#                 print('O usuario preferiu não digitar o numero Real')
+#                 break
+#         break
+#     except:
+#         print('ERRO: por favor, digite um número inteiro válido.')
+#         continue
+# print(f'O valor inteiro digitado foi {i} e o real foi {f}')
+
+# EXERCICIO 114
+# import urllib
+# import urllib.request
+
+# try:
+#     site = urllib.request.urlopen('http://www.pudim.com.br')
+# except urllib.error.URLError:
+#     print('O site Pudim não está acessível no momento.')
+# else:
+#     print('Consegui acessar o site Pudim com sucesso!')
